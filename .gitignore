@@ -1,0 +1,30 @@
+# Streamlit secrets (API keys — NEVER commit these)
+.streamlit/secrets.toml
+.streamlit/config.toml
+
+# User data (private leads — keep local only)
+users/
+data/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+env/
+ENV/
+
+# IDE files
+.idea/
+.vscode/
+*.sublime-*
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Logs
+*.log
