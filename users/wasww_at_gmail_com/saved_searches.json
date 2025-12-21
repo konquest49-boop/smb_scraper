@@ -1,0 +1,234 @@
+{
+  "Roofing_Miami+New York_1218_1417": {
+    "leads": [
+      {
+        "email": "gmpmiami@hotmail.com",
+        "found_on": "https://www.griffithsmetal.com/about-us",
+        "domain_root": "https://www.griffithsmetal.com",
+        "confidence": 85,
+        "mx_hosts": [
+          "hotmail-com.olc.protection.outlook.com."
+        ],
+        "title": "Aluminum Insulated Roofs & Screens | Key Largo, Miami, FL"
+      },
+      {
+        "email": "supremeroofingsvc@hotmail.com",
+        "found_on": "https://www.supremeroofing-co.com/",
+        "domain_root": "https://www.supremeroofing-co.com",
+        "confidence": 85,
+        "mx_hosts": [
+          "hotmail-com.olc.protection.outlook.com."
+        ],
+        "title": "Roofing Services"
+      },
+      {
+        "email": "jf.caguana.construction.inc@hotmail.com",
+        "found_on": "http://caguanaroofing.com/",
+        "domain_root": "http://caguanaroofing.com",
+        "confidence": 85,
+        "mx_hosts": [
+          "hotmail-com.olc.protection.outlook.com."
+        ],
+        "title": "Roofing"
+      },
+      {
+        "email": "jquinteroroofing@hotmail.com",
+        "found_on": "http://new.jqroofing.com/contact-us",
+        "domain_root": "http://new.jqroofing.com",
+        "confidence": 85,
+        "mx_hosts": [
+          "hotmail-com.olc.protection.outlook.com."
+        ],
+        "title": "Contact Us"
+      },
+      {
+        "email": "lchconstruction@hotmail.com",
+        "found_on": "https://www.lchgeneralconstruction.com/services",
+        "domain_root": "https://www.lchgeneralconstruction.com",
+        "confidence": 85,
+        "mx_hosts": [
+          "hotmail-com.olc.protection.outlook.com."
+        ],
+        "title": "Building, Remodeling, and Roofing Services in Chicago"
+      },
+      {
+        "email": "ivanroofing@hotmail.com",
+        "found_on": "https://www.ivansroofingandremodeling.com/about-us",
+        "domain_root": "https://www.ivansroofingandremodeling.com",
+        "confidence": 85,
+        "mx_hosts": [
+          "hotmail-com.olc.protection.outlook.com."
+        ],
+        "title": "Ivan's Roofing & Remodeling: Repairs | Highland, IN"
+      },
+      {
+        "email": "rooftop@live.com",
+        "found_on": "https://www.paulietheroofer.com/contact-us",
+        "domain_root": "https://www.paulietheroofer.com",
+        "confidence": 35,
+        "mx_hosts": [],
+        "title": "Contact Paulie The Roofer Roslyn Heights NY"
+      },
+      {
+        "email": "patriothi@outlook.com",
+        "found_on": "https://patriotinspect.com/",
+        "domain_root": "https://patriotinspect.com",
+        "confidence": 85,
+        "mx_hosts": [
+          "outlook-com.olc.protection.outlook.com."
+        ],
+        "title": "Four Point Inspection in Miami-Dade County"
+      },
+      {
+        "email": "dragonshieldroofing@outlook.com",
+        "found_on": "https://www.dragonshieldroofing.com/",
+        "domain_root": "https://www.dragonshieldroofing.com",
+        "confidence": 85,
+        "mx_hosts": [
+          "outlook-com.olc.protection.outlook.com."
+        ],
+        "title": "Roof Coating | Daniel Mondragon - Dragon Shield Roofing"
+      },
+      {
+        "email": "ensurefarm@outlook.com",
+        "found_on": "https://ensurefarm.com/contact-us",
+        "domain_root": "https://ensurefarm.com",
+        "confidence": 85,
+        "mx_hosts": [
+          "outlook-com.olc.protection.outlook.com."
+        ],
+        "title": "Ensure Farm"
+      }
+    ],
+    "metadata": {
+      "industries": [
+        "Roofing"
+      ],
+      "cities": [
+        "Miami",
+        "New York",
+        "Chicago"
+      ],
+      "country": "United States",
+      "filtered_duplicates": 0,
+      "ultra_mode": false,
+      "mx_verified": true,
+      "excluded_emails_count": 0,
+      "duplicate_examples": []
+    },
+    "timestamp": "2025-12-18T14:17:42.375810",
+    "lead_count": 10
+  },
+  "Roofing_Houston+Los Angeles_1221_1022": {
+    "leads": [
+      {
+        "email": "ableroofingtx@hotmail.com",
+        "found_on": "https://ableroofingtx.com/",
+        "domain_root": "https://ableroofingtx.com",
+        "title": "Able Roofing & Construction: Roofing and Remodeling ...",
+        "confidence": 85,
+        "mx_verified": true,
+        "mx_hosts": [
+          "hotmail-com.olc.protection.outlook.com."
+        ]
+      },
+      {
+        "email": "shearoofing@hotmail.com",
+        "found_on": "https://www.shearoofinginc.com/free-estimate",
+        "domain_root": "https://www.shearoofinginc.com",
+        "title": "Contact Us \u2014 Shea Roofing Inc",
+        "confidence": 85,
+        "mx_verified": true,
+        "mx_hosts": [
+          "hotmail-com.olc.protection.outlook.com."
+        ]
+      },
+      {
+        "email": "smartroofingsolutions@outlook.com",
+        "found_on": "http://www.smart-roofing-solutions.com/",
+        "domain_root": "http://www.smart-roofing-solutions.com",
+        "title": "Your Reliable Roofing Company",
+        "confidence": 85,
+        "mx_verified": true,
+        "mx_hosts": [
+          "outlook-com.olc.protection.outlook.com."
+        ]
+      },
+      {
+        "email": "victorconstruction2@hotmail.com",
+        "found_on": "https://universalconstructionpainting.com/contact",
+        "domain_root": "https://universalconstructionpainting.com",
+        "title": "Dependable Roofing Contractor in Houston, TX",
+        "confidence": 85,
+        "mx_verified": true,
+        "mx_hosts": [
+          "hotmail-com.olc.protection.outlook.com."
+        ]
+      },
+      {
+        "email": "htbuilders@hotmail.com",
+        "found_on": "https://htbuildersroofing.com/",
+        "domain_root": "https://htbuildersroofing.com",
+        "title": "Projects - HT Builders Roofing",
+        "confidence": 85,
+        "mx_verified": true,
+        "mx_hosts": [
+          "hotmail-com.olc.protection.outlook.com."
+        ]
+      },
+      {
+        "email": "gutterking75@hotmail.com",
+        "found_on": "http://www.gutterking.com/about",
+        "domain_root": "http://www.gutterking.com",
+        "title": "Gutter Installation | Seattle, WA | gutterking.com",
+        "confidence": 85,
+        "mx_verified": true,
+        "mx_hosts": [
+          "hotmail-com.olc.protection.outlook.com."
+        ]
+      },
+      {
+        "email": "rcroofing@live.com",
+        "found_on": "https://rcroofingcompany.com/contact-us",
+        "domain_root": "https://rcroofingcompany.com",
+        "title": "Contact Us",
+        "confidence": 85,
+        "mx_verified": true,
+        "mx_hosts": [
+          "live-com.olc.protection.outlook.com."
+        ]
+      },
+      {
+        "email": "tandjextinc@hotmail.com",
+        "found_on": "https://tandjextinc.com/",
+        "domain_root": "https://tandjextinc.com",
+        "title": "Residential Roofing | Roof Repairs | Locust Grove, GA",
+        "confidence": 85,
+        "mx_verified": true,
+        "mx_hosts": [
+          "hotmail-com.olc.protection.outlook.com."
+        ]
+      }
+    ],
+    "metadata": {
+      "industries": [
+        "Roofing"
+      ],
+      "cities": [
+        "Houston",
+        "Los Angeles",
+        "Phoenix",
+        "Atlanta",
+        "Seattle"
+      ],
+      "country": "United States",
+      "mode": "Deep Search",
+      "mx_verified": true,
+      "quality_filtered": true,
+      "total_found": 8,
+      "quality_leads": 8
+    },
+    "timestamp": "2025-12-21T10:22:30.522063",
+    "lead_count": 8
+  }
+}

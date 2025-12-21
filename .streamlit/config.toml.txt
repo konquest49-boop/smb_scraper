@@ -1,0 +1,12 @@
+[client]
+showSidebarNavigation = true
+
+[ui]
+hideTopBar = false
+
+[runner]
+fastReruns = true
+
+# This hides the main script from sidebar
+[server]
+enableStaticServing = true
