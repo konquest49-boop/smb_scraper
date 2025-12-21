@@ -44,26 +44,43 @@ if 'last_search_results' not in st.session_state:
 if 'show_save_dialog' not in st.session_state:
     st.session_state.show_save_dialog = False
 
-# API KEYS - ROBUST LOADING
+# API KEYS - MULTIPLE LOADING METHODS
+SERPAPI_KEY = ""
+SERPER_KEY = ""
+SERPSTACK_KEY = ""
+
+# Method 1: Try secrets.toml
 try:
-    # Try direct access first (Streamlit Cloud)
     SERPAPI_KEY = str(st.secrets.get("SERPAPI_KEY", "")).strip()
     SERPER_KEY = str(st.secrets.get("SERPER_KEY", "")).strip()
     SERPSTACK_KEY = str(st.secrets.get("SERPSTACK_KEY", "")).strip()
-except Exception as e:
-    # Fallback: try dictionary-style access
+except:
+    pass
+
+# Method 2: Try dictionary access
+if not SERPAPI_KEY:
     try:
         SERPAPI_KEY = str(st.secrets["SERPAPI_KEY"]).strip()
     except:
-        SERPAPI_KEY = ""
+        pass
+if not SERPER_KEY:
     try:
         SERPER_KEY = str(st.secrets["SERPER_KEY"]).strip()
     except:
-        SERPER_KEY = ""
+        pass
+if not SERPSTACK_KEY:
     try:
         SERPSTACK_KEY = str(st.secrets["SERPSTACK_KEY"]).strip()
     except:
-        SERPSTACK_KEY = ""
+        pass
+
+# Method 3: TEMPORARY FALLBACK - Replace with your actual keys
+# TODO: Remove this once secrets are working properly
+if not any([SERPAPI_KEY, SERPER_KEY, SERPSTACK_KEY]):
+    st.warning("⚠️ Using fallback API keys - Configure secrets for production!")
+    SERPAPI_KEY = "4f77fab169702fb1cebb24be447bff9878d3d0a10222c12e6c0a7ad4cead"
+    SERPER_KEY = "566e966dd9fd45825f46f176012dce7d1d60e88f"
+    SERPSTACK_KEY = "3d12b2f8bb39c0f87ff730792f191829"
 
 # Show API status
 api_status = []
