@@ -44,18 +44,60 @@ if 'last_search_results' not in st.session_state:
 if 'show_save_dialog' not in st.session_state:
     st.session_state.show_save_dialog = False
 
-# API KEYS
-SERPAPI_KEY = st.secrets.get("SERPAPI_KEY", "").strip()
-SERPER_KEY = st.secrets.get("SERPER_KEY", "").strip()
-SERPSTACK_KEY = st.secrets.get("SERPSTACK_KEY", "").strip()
+# API KEYS - ROBUST LOADING
+try:
+    # Try direct access first (Streamlit Cloud)
+    SERPAPI_KEY = str(st.secrets.get("SERPAPI_KEY", "")).strip()
+    SERPER_KEY = str(st.secrets.get("SERPER_KEY", "")).strip()
+    SERPSTACK_KEY = str(st.secrets.get("SERPSTACK_KEY", "")).strip()
+except Exception as e:
+    # Fallback: try dictionary-style access
+    try:
+        SERPAPI_KEY = str(st.secrets["SERPAPI_KEY"]).strip()
+    except:
+        SERPAPI_KEY = ""
+    try:
+        SERPER_KEY = str(st.secrets["SERPER_KEY"]).strip()
+    except:
+        SERPER_KEY = ""
+    try:
+        SERPSTACK_KEY = str(st.secrets["SERPSTACK_KEY"]).strip()
+    except:
+        SERPSTACK_KEY = ""
 
+# Show API status
 api_status = []
 if SERPAPI_KEY: api_status.append("SerpAPI ✅")
 if SERPER_KEY: api_status.append("Serper ✅")
 if SERPSTACK_KEY: api_status.append("SerpStack ✅")
 
+# Debug info (remove after fixing)
 if not any([SERPAPI_KEY, SERPER_KEY, SERPSTACK_KEY]):
-    st.error("❌ NO API KEYS! Add to `.streamlit/secrets.toml`")
+    st.error("❌ NO API KEYS DETECTED!")
+    
+    with st.expander("🔍 Debug Info - Click to see details"):
+        st.write("**Attempting to read secrets...**")
+        st.write(f"Secrets available: {list(st.secrets.keys())}")
+        st.write(f"SERPAPI_KEY length: {len(SERPAPI_KEY)}")
+        st.write(f"SERPER_KEY length: {len(SERPER_KEY)}")
+        st.write(f"SERPSTACK_KEY length: {len(SERPSTACK_KEY)}")
+        
+        st.info("""
+        **How to add secrets on Streamlit Cloud:**
+        1. Go to your app dashboard
+        2. Click ⋮ (three dots) → Settings
+        3. Click "Secrets" in sidebar
+        4. Add your keys in this format:
+        
+        ```
+        SERPAPI_KEY="your_key_here"
+        SERPER_KEY="your_key_here"
+        SERPSTACK_KEY="your_key_here"
+        ```
+        
+        5. Click Save and wait for app to restart
+        """)
+    
     st.stop()
 
 # SEARCH MODE CONFIGS
